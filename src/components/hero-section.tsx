@@ -43,7 +43,10 @@ export function HeroSection() {
               className="text-lg px-10 py-5 shadow-lg hover:shadow-xl transition-all bg-primary text-white"
               asChild
             >
-              <Link href="/signup" className="flex items-center gap-2">
+              <Link
+                href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/signup`}
+                className="flex items-center gap-2"
+              >
                 Get Started Now
                 <ArrowRight className="w-5 h-5" />
               </Link>

@@ -75,7 +75,9 @@ export default function SubscriptionBanner() {
       }
       window.location.href = `https://chatverse.lemonsqueezy.com/checkout/buy/${checkoutId}`;
     } else {
-      router.push(`/login?variantCheckoutId=${checkoutId}`);
+      router.push(
+        `${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/login?variantCheckoutId=${checkoutId}`
+      );
     }
   };
 

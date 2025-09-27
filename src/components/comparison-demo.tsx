@@ -110,7 +110,9 @@ export function ComparisonDemo() {
             className="bg-primary text-white hover:bg-primary/95 transition-colors"
             asChild
           >
-            <Link href="/signup">Get smarter & more accurate AI answers</Link>
+            <Link href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/signup`}>
+              Get smarter & more accurate AI answers
+            </Link>
           </Button>
         </div>
       </div>

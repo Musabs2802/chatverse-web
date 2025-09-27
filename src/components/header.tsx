@@ -60,7 +60,10 @@ export function Header() {
               className="bg-black text-white hover:bg-gray-800 transition-colors"
               asChild
             >
-              <Link href="/dashboard" className="flex items-center gap-1">
+              <Link
+                href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}`}
+                className="flex items-center gap-1"
+              >
                 <LayoutDashboard className="w-4 h-4" /> Go to App
               </Link>
             </Button>
@@ -72,14 +75,20 @@ export function Header() {
               className="text-gray-700 hover:text-black bg-none transition-colors"
               asChild
             >
-              <Link href="/login">Login</Link>
+              <Link href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/login`}>
+                Login
+              </Link>
             </Button>
             <Button
               size="sm"
               className="bg-black text-white hover:bg-gray-800 transition-colors"
               asChild
             >
-              <Link href="/signup">Get Started</Link>
+              <Link
+                href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/signup`}
+              >
+                Get Started
+              </Link>
             </Button>
           </div>
         )}

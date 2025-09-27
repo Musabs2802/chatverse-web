@@ -134,7 +134,11 @@ export function PricingSection() {
                   size="lg"
                   asChild
                 >
-                  <Link href="/signup">Get Started Now</Link>
+                  <Link
+                    href={`${process.env.NEXT_PUBLIC_CHATVERSE_APP_URL}/signup`}
+                  >
+                    Get Started Now
+                  </Link>
                 </Button>
                 <p className="text-xs text-center text-gray-500 mt-2">
                   🔒 Payments processed securely via Stripe
