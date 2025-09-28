@@ -7,18 +7,10 @@ import {
   SubscriptionManager,
   type UserSubscription,
 } from "@/src/lib/subscription";
-import { Plan } from "../config/plans";
 
 type SubscriptionContextType = {
   subscription: UserSubscription | null;
   loading: boolean;
-  registerSubscription: (
-    provider_subscription_id: string,
-    plan: Plan
-  ) => Promise<void>;
-  cancelSubscription: () => Promise<void>;
-  updateTokenUsage: (tokensUsed: number) => Promise<void>;
-  refreshSubscription: () => Promise<void>;
 };
 
 const SubscriptionContext = createContext<SubscriptionContextType | undefined>(
@@ -67,34 +59,6 @@ export function SubscriptionProvider({
     }
   };
 
-  const registerSubscription = async (
-    provider_subscription_id: string,
-    plan: Plan
-  ) => {
-    if (!user) throw new Error("User not authenticated");
-
-    await subscriptionManager.registerSubscription(
-      user,
-      provider_subscription_id,
-      plan
-    );
-    await refreshSubscription();
-  };
-
-  const cancelSubscription = async () => {
-    if (!user) throw new Error("User not authenticated");
-
-    await subscriptionManager.cancelSubscription(user);
-    await refreshSubscription();
-  };
-
-  const updateTokenUsage = async (tokensUsed: number) => {
-    if (!user) throw new Error("User not authenticated");
-
-    await subscriptionManager.updateTokenUsage(user, tokensUsed);
-    await refreshSubscription();
-  };
-
   useEffect(() => {
     refreshSubscription();
   }, [user]);
@@ -104,10 +68,6 @@ export function SubscriptionProvider({
       value={{
         subscription,
         loading,
-        registerSubscription,
-        cancelSubscription,
-        updateTokenUsage,
-        refreshSubscription,
       }}
     >
       {children}
