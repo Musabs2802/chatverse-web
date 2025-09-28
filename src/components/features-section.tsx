@@ -52,7 +52,7 @@ const features = [
     icon: Settings,
     title: "Custom Projects with System Instructions",
     description:
-      'Create unique projects with tailored guidelines. Set "Marketing Mode" or "Code Review Mode" once, ensuring every AI follows your project\'s direction.',
+      "Create unique projects with tailored guidelines. Set &quot;Marketing Mode&quot; or &quot;Code Review Mode&quot; once, ensuring every AI follows your project&apos;s direction.",
     benefits: [
       "One-time setup keeps all AI replies on-brand",
       "Instantly switch modes across chats",

@@ -66,7 +66,7 @@ export function PricingSection() {
                 $110<span className="text-sm text-gray-500">+/month</span>
               </div>
               <CardDescription className="mt-1 text-gray-500">
-                What you're paying now
+                What you&apos;re paying now
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">

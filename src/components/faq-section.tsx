@@ -10,7 +10,7 @@ const faqs = [
     question:
       "How is Chatverse different from subscribing to each AI separately?",
     answer:
-      "AI Chatverse brings together the world's most powerful AI models — Grok 4, ChatGPT 5, Gemini 2.5 Pro, DeepSeek, Claude Sonnet 4, and Perplexity Sonar Pro — in one place. Instead of juggling multiple subscriptions and browser tabs, you get all answers side-by-side in a single interface, plus exclusive features like Prompt Enhancement and Custom Projects.",
+      "AI Chatverse brings together the world&apos;s most powerful AI models — Grok 4, ChatGPT 5, Gemini 2.5 Pro, DeepSeek, Claude Sonnet 4, and Perplexity Sonar Pro — in one place. Instead of juggling multiple subscriptions and browser tabs, you get all answers side-by-side in a single interface, plus exclusive features like Prompt Enhancement and Custom Projects.",
   },
   {
     question: "Can I choose which AI models to use?",

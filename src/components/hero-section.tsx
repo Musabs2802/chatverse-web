@@ -21,7 +21,7 @@ export function HeroSection() {
 
           {/* Main heading */}
           <h1 className="font-serif font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight text-gray-900 animate-fadeIn delay-200">
-            World's Most Powerful AIs.
+            World&apos;s Most Powerful AIs.
             <br />
             <span className="text-primary">One</span> Platform.
             <br />
@@ -32,8 +32,8 @@ export function HeroSection() {
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed animate-fadeIn delay-400">
             Stop juggling tabs and subscriptions. Compare responses from
             ChatGPT, Claude, Gemini, and more side-by-side for just{" "}
-            <span className="text-primary font-semibold">$5</span>. That's 90%
-            less than individual subscriptions.
+            <span className="text-primary font-semibold">$5</span>. That&apos;s
+            90% less than individual subscriptions.
           </p>
 
           {/* CTA buttons */}
