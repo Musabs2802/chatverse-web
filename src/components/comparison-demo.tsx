@@ -30,7 +30,7 @@ export function ComparisonDemo() {
             <CardHeader>
               <CardTitle className="text-center font-serif text-2xl">
                 Sample Question: &quot;What&apos;s the best way to optimize
-                performance for large datasets?&quot;React
+                performance for large datasets?&quot; React
               </CardTitle>
             </CardHeader>
           </Card>
