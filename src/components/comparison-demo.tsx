@@ -29,8 +29,8 @@ export function ComparisonDemo() {
           <Card className="border border-primary/20 hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
               <CardTitle className="text-center font-serif text-2xl">
-                Sample Question: "What&apos;s the best way to optimize React
-                performance for large datasets?"
+                Sample Question: &quot;What&apos;s the best way to optimize
+                performance for large datasets?&quot;React
               </CardTitle>
             </CardHeader>
           </Card>
